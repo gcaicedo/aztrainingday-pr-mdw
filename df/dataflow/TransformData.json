@@ -9,7 +9,7 @@
 						"referenceName": "ADLSG2",
 						"type": "DatasetReference"
 					},
-					"name": "Raw"
+					"name": "source1"
 				}
 			],
 			"sinks": [],
