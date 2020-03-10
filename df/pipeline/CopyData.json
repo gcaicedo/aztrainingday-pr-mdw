@@ -75,13 +75,6 @@
 						"referenceName": "TransformData",
 						"type": "DataFlowReference"
 					},
-					"staging": {
-						"linkedService": {
-							"referenceName": "AzureDataLakeStorage1",
-							"type": "LinkedServiceReference"
-						},
-						"folderPath": "data/dw-staging"
-					},
 					"compute": {
 						"coreCount": 8,
 						"computeType": "General"
