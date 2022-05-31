@@ -7,7 +7,35 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlDWTable",
-		"schema": [],
+		"schema": [
+			{
+				"name": "PrimaryGenre",
+				"type": "nvarchar"
+			},
+			{
+				"name": "year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "AverageRating",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "HiguestRated",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LowestRated",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NumberofMovies",
+				"type": "bigint",
+				"precision": 19
+			}
+		],
 		"typeProperties": {
 			"schema": "dbo",
 			"table": "Ratings"
