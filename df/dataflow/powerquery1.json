@@ -3,7 +3,18 @@
 	"properties": {
 		"type": "WranglingDataFlow",
 		"typeProperties": {
-			"sources": []
+			"sources": [
+				{
+					"name": "ASA_Movies",
+					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table',\n\tstaged: false) ~>  ASA_Movies",
+					"dataset": {
+						"referenceName": "ASA_Movies",
+						"type": "DatasetReference"
+					}
+				}
+			],
+			"script": "section Section1;\r\nshared ASA_Movies = let AdfDoc = Sql.Database(\"mdw-training-pr.database.windows.net\", \"aztnday-dw\", [CreateNavigationProperties = false]), InputTable = AdfDoc{[Schema=\"dbo\",Item=\"Ratings\"]}[Data] in InputTable;\r\nshared UserQuery = let Source = #\"ASA_Movies\",\r\n  #\"Rounded off\" = Table.TransformColumns(Source, {{\"AverageRating\", each Number.Round(_, 2), type number}}) in #\"Rounded off\";\r\n",
+			"documentLocale": "en-us"
 		}
 	}
 }
