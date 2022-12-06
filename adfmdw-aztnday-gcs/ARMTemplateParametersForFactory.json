@@ -8,6 +8,12 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"AzureSqlDB_GCS_Demos_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDB_MDW_Training_connectionString": {
+			"value": ""
+		},
 		"AzureSynapseAnalytics_connectionString": {
 			"value": ""
 		},

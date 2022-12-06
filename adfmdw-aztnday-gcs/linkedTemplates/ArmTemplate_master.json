@@ -11,6 +11,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
+		"AzureSqlDB_GCS_Demos_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDB_GCS_Demos'"
+		},
+		"AzureSqlDB_MDW_Training_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDB_MDW_Training'"
+		},
 		"AzureSynapseAnalytics_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics'"
@@ -52,6 +60,12 @@
 					},
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
+					"AzureSqlDB_GCS_Demos_connectionString": {
+						"value": "[parameters('AzureSqlDB_GCS_Demos_connectionString')]"
+					},
+					"AzureSqlDB_MDW_Training_connectionString": {
+						"value": "[parameters('AzureSqlDB_MDW_Training_connectionString')]"
 					},
 					"AzureSynapseAnalytics_connectionString": {
 						"value": "[parameters('AzureSynapseAnalytics_connectionString')]"
