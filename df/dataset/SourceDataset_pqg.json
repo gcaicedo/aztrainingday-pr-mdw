@@ -1,0 +1,49 @@
+{
+	"name": "SourceDataset_pqg",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDB_GCS_Demos",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "MemberID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "FirstName",
+				"type": "varchar"
+			},
+			{
+				"name": "LastName",
+				"type": "varchar"
+			},
+			{
+				"name": "Phone",
+				"type": "varchar"
+			},
+			{
+				"name": "Email",
+				"type": "varchar"
+			},
+			{
+				"name": "DiscountCode",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "BirthDay",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "Data",
+			"table": "Membership"
+		}
+	}
+}
