@@ -1,12 +1,12 @@
 {
-	"name": "powerquery1",
+	"name": "WranglingDataFlow",
 	"properties": {
 		"type": "WranglingDataFlow",
 		"typeProperties": {
 			"sources": [
 				{
 					"name": "ASA_Movies",
-					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table',\n\tstaged: false) ~>  ASA_Movies",
+					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table',\n\tstaged: false) ~> ASA_Movies",
 					"dataset": {
 						"referenceName": "ASA_Movies",
 						"type": "DatasetReference"
